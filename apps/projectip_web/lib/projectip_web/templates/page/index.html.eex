@@ -1,0 +1,28 @@
+
+<div id="clock"></div>
+
+<h2><%= gettext "List of your current seen animals!" %></h2>
+
+<section class="row">
+<table>
+  <thead>
+    <tr>
+      <th><%= gettext "Name"%></th>
+      <th><%= gettext "Date of birth" %></th>
+      <th><%= gettext "Type"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for animal <- @animals do %>
+    <tr>
+      <td><%= animal.name %></td>
+      <td><%= animal.dob %></td>
+      <td><%= animal.cat_or_dog %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+</section>
+<script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>

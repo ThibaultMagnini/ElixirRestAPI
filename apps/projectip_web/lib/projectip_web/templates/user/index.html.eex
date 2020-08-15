@@ -1,0 +1,30 @@
+<h1><%=gettext "Listing Users"%></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%=gettext "Username"%></th>
+      <th><%=gettext "Hashed password"%></th>
+      <th><%=gettext "Role"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.username %></td>
+      <td><%= user.hashed_password %></td>
+      <td><%= user.role %></td>
+
+      <td>
+        <!--<span><%= link "Show", to: Routes.user_path(@conn, :show, user) %></span>-->
+        <span><%= link gettext("Edit"), to: Routes.user_path(@conn, :edit, user) %></span>
+        <span><%= link gettext("Delete"), to: Routes.user_path(@conn, :delete, user), method: :delete, data: [confirm: gettext "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link gettext("New User"), to: Routes.user_path(@conn, :new) %></span>

@@ -1,0 +1,24 @@
+<h2><%= gettext "Login Page"%></h2>
+
+<%= form_for @changeset, @action, fn f -> %>
+
+<div class="form-group">
+    <%= label f, :username, gettext("username"), class: "control-label" %>
+    <%= text_input f, :username, class: "form-control" %>
+    <%= error_tag f, :username %>
+</div>
+
+<div class="form-group">
+    <%= label f, :password, gettext("password"), class: "control-label" %>
+    <%= password_input f, :password, class: "form-control" %>
+    <%= error_tag f, :password %>
+</div>
+
+<div class="form-group">
+    <%= submit gettext "Submit", class: "btn btn-primary" %>
+</div>
+<% end %>
+
+<div class="">
+    <%=link gettext("Register"), to: Routes.user_path(@conn, :register) %>
+</div>

@@ -1,0 +1,314 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/projectip_web/templates/layout/app.html.eex:17
+msgid "Home"
+msgstr "Huis"
+
+#, elixir-format
+#: lib/projectip_web/templates/layout/app.html.eex:19
+msgid "Login"
+msgstr "Aanmelden"
+
+#, elixir-format
+#: lib/projectip_web/templates/layout/app.html.eex:20
+msgid "Logout"
+msgstr "Uitloggen"
+
+#, elixir-format
+#: lib/projectip_web/templates/layout/app.html.eex:21
+msgid "Profile"
+msgstr "Profiel"
+
+#, elixir-format
+#: lib/projectip_web/templates/layout/app.html.eex:18
+msgid "User management"
+msgstr "Gebruikers beheer"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:23
+#: lib/projectip_web/templates/user/profile.html.eex:31
+msgid "Are you sure?"
+msgstr "Ben je zeker?"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/changepassword.html.eex:1
+msgid "Change Password"
+msgstr "Verander Paswoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/page/index.html.eex:11
+msgid "Date of birth"
+msgstr "Geboorte datum"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:7
+msgid "Hashed password"
+msgstr "Gehashed paswoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/show.html.eex:11
+msgid "Hashed password:"
+msgstr "Gehashed paswoord:"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:1
+msgid "Listing Users"
+msgstr "Oplijsting gebruikers"
+
+#, elixir-format
+#: lib/projectip_web/templates/session/new.html.eex:1
+msgid "Login Page"
+msgstr "Aanmeld pagina"
+
+#, elixir-format
+#: lib/projectip_web/templates/page/index.html.eex:10
+#: lib/projectip_web/templates/user/generateapikeyform.html.eex:3
+msgid "Name"
+msgstr "Naam"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:30
+#: lib/projectip_web/templates/user/make.html.eex:1 lib/projectip_web/templates/user/new.html.eex:1
+msgid "New User"
+msgstr "Nieuwe Gebruiker"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:8
+msgid "Role"
+msgstr "Rol"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/show.html.eex:16
+msgid "Role:"
+msgstr "Rol:"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/show.html.eex:1
+msgid "Show User"
+msgstr "Toon Gebruiker"
+
+#, elixir-format
+#: lib/projectip_web/templates/session/new.html.eex:18
+msgid "Submit"
+msgstr "Verzend"
+
+#, elixir-format
+#: lib/projectip_web/templates/page/index.html.eex:12
+msgid "Type"
+msgstr "Type"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/editprofile.html.eex:1
+msgid "Update username"
+msgstr "Verander gebruikersnaam"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/editusernameform.html.eex:10
+#: lib/projectip_web/templates/user/form.html.eex:8 lib/projectip_web/templates/user/index.html.eex:6
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/profile.html.eex:2
+#: lib/projectip_web/templates/user/show.html.eex:6
+msgid "Username:"
+msgstr "Gebruikersnaam:"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/profile.html.eex:20
+msgid "Api Keys"
+msgstr "Api sleutel"
+
+#, elixir-format
+#: lib/projectip_web/templates/page/index.html.eex:4
+msgid "List of your current seen animals!"
+msgstr "Lijst van al jouw geziene dieren!"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:23
+#: lib/projectip_web/templates/user/profile.html.eex:31
+msgid "Delete"
+msgstr "Verwijder"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/index.html.eex:22
+msgid "Edit"
+msgstr "Aanpassen"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/profile.html.eex:13
+msgid "Generate a new Api Key"
+msgstr "Genereer een nieuwe Api sleutel"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/generateapikeyform.html.eex:8
+msgid "Generate!"
+msgstr "Genereer!"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/profile.html.eex:30
+msgid "Show"
+msgstr "Toon"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/profile.html.eex:9
+msgid "change password"
+msgstr "Verander Paswoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/profile.html.eex:5
+msgid "edit profile"
+msgstr "Profiel aanpassen"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:142
+#: lib/projectip_web/controllers/user_controller.ex:142
+msgid "Passwords not matching"
+msgstr "Paswoorden komen niet overeen!"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:23
+#: lib/projectip_web/controllers/user_controller.ex:23 lib/projectip_web/controllers/user_controller.ex:78
+#: lib/projectip_web/controllers/user_controller.ex:78
+msgid "User created successfully."
+msgstr "Gebruiker succesvol gecreeerd"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:197
+#: lib/projectip_web/controllers/user_controller.ex:197
+msgid "Api key deleted successfully."
+msgstr "Api sleutel succesvol Verwijderd"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:148
+#: lib/projectip_web/controllers/user_controller.ex:148
+msgid "Current Password not correct"
+msgstr "Oude wachtwoord niet juist!"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:163
+#: lib/projectip_web/controllers/user_controller.ex:163
+msgid "Generated Api Key!"
+msgstr "Genereer een nieuwe Api sleutel"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:134
+#: lib/projectip_web/controllers/user_controller.ex:134
+msgid "Password updated successfully."
+msgstr "wachtwoord succesvol aangepast"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:62
+#: lib/projectip_web/controllers/user_controller.ex:62
+msgid "User deleted successfully."
+msgstr "Gebruiker succesvol gecreeerd"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:49
+#: lib/projectip_web/controllers/user_controller.ex:49
+msgid "User updated successfully."
+msgstr "Gebruiker succesvol gecreeerd"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:110
+#: lib/projectip_web/controllers/user_controller.ex:110
+msgid "Username updated successfully."
+msgstr "Gebruiker succesvol gecreeerd"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:168
+#: lib/projectip_web/controllers/user_controller.ex:168
+msgid "Api key name may not be empty!"
+msgstr "Api sleutel naam mag niet leeg zijn!"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/register.html.eex:16
+msgid "Confirm Password"
+msgstr "Bevestig wachtwoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/changepasswordform.html.eex:16
+msgid "Confirm password"
+msgstr "Bevestig wachtwoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/changepasswordform.html.eex:8
+#: lib/projectip_web/templates/user/register.html.eex:8
+msgid "Current Password"
+msgstr "Oude wachtwoord niet juist!"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/register.html.eex:12
+msgid "New Password"
+msgstr "Nieuw wachtwoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/changepasswordform.html.eex:12
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/form.html.eex:12
+msgid "Password"
+msgstr "Wachtwoord"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:86
+#: lib/projectip_web/controllers/user_controller.ex:86
+msgid "Passwords not matching."
+msgstr "Paswoorden komen niet overeen!"
+
+#, elixir-format
+#: lib/projectip_web/templates/session/new.html.eex:23
+msgid "Register"
+msgstr "Registreer"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/changepasswordform.html.eex:21
+msgid "Save"
+msgstr "Sla op"
+
+#, elixir-format
+#: lib/projectip_web/controllers/session_controller.ex:32
+#: lib/projectip_web/controllers/session_controller.ex:32
+msgid "Welcome back!"
+msgstr "Welkom terug!"
+
+#, elixir-format
+#: lib/projectip_web/templates/session/new.html.eex:12
+msgid "password"
+msgstr "wachtwoord"
+
+#, elixir-format
+#: lib/projectip_web/templates/user/form.html.eex:16
+msgid "role"
+msgstr "Rol"
+
+#, elixir-format
+#: lib/projectip_web/templates/session/new.html.eex:6
+msgid "username"
+msgstr "Gebruikersnaam"
+
+#, elixir-format
+#: lib/projectip_web/controllers/user_controller.ex:183
+#: lib/projectip_web/controllers/user_controller.ex:183
+msgid "Cant see other peoples api key!"
+msgstr "Mag niet"
+
+#, elixir-format
+#: lib/projectip_web/plugs/authorization_plug.ex:18
+#: lib/projectip_web/plugs/authorization_plug.ex:18
+msgid "Unauthorized access"
+msgstr "Geen Toegang!"

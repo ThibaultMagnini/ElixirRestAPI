@@ -1,0 +1,5 @@
+<div>
+    <%= @key.key %>
+</div>
+
+<span><%= link "Back", to: Routes.user_path(@conn, :profile) %></span>

@@ -1,0 +1,39 @@
+
+<h2><%= gettext "Username:"%> <%= @user.username %></h2>
+
+<div class="">
+   <%=link gettext("edit profile"), to: Routes.user_path(@conn, :editprofile) %>
+</div>
+
+<div class="">
+  <%=link gettext("change password"), to: Routes.user_path(@conn, :changepassword) %>
+</div>
+
+
+<h3><%= gettext "Generate a new Api Key"%></h3>
+
+<%= render "generateapikeyform.html", Map.put(assigns, :action, Routes.user_path(@conn, :generateapikey)) %>
+
+<table>
+  <thead>
+    <tr>
+      <th><%=gettext "Api Keys"%></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for key <- @user.apikey do %>
+    <tr>
+      <td><%= key.name %></td>
+
+      <td>
+        <span><%= link gettext("Show"), to: Routes.user_path(@conn, :showkey, key) %></span>
+        <span><%= link gettext("Delete"), to: Routes.user_path(@conn, :deletekey, key), method: :delete, data: [confirm: gettext "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+
+

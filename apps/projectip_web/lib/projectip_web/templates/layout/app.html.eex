@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title><%= assigns[:page_title] || "Cat Dog app" %></title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <%= csrf_meta_tag() %>
+  </head>
+  <body>
+    <header>
+      <section class="container">
+
+      <nav role="navigation">
+        <ul>
+          <li><a href="/"><%= gettext "Home" %></a></li>
+          <li><a href="<%= Routes.user_path(@conn, :index) %>"><%= gettext "User management" %></a></li>
+          <!--<li><a href="<%= Routes.session_path(@conn, :new) %>"><%= gettext "Login"%></a></li>-->
+          <li><a href="<%= Routes.session_path(@conn, :logout) %>"><%= gettext "Logout"%></a></li>
+          <li><a href="<%= Routes.user_path(@conn, :profile) %>"><%= gettext "Profile" %></a></li>
+        </ul>
+      </nav>
+      <div>
+        <p><%= new_locale @conn, :en, "English" %></p>
+        <p><%= new_locale @conn, :nl, "Nederlands" %></p>
+      </div>
+        <a href="https://phoenixframework.org/" class="phx-logo">
+          <img src="<%= Routes.static_path(@conn, "/images/cat_and_dog_frens.jpg") %>" alt="Phoenix Framework Logo"/>
+        </a>
+        <h3>Project van Thibault Magnini</h3>
+      </section>
+    </header>
+    <main role="main" class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+  </body>
+</html>
