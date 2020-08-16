@@ -2,7 +2,7 @@ use Mix.Config
 
 # Configure your database
 config :projectip, Projectip.Repo,
-  username: "postgres",
+  username: "",
   password: "",
   database: "major",
   hostname: "localhost",
